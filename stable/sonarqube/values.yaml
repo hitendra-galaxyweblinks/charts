@@ -8,7 +8,7 @@ deploymentStrategy: {}
 
 image:
   repository: sonarqube
-  tag: latest
+  tag: 8.2-community
   # If using a private repository, the name of the imagePullSecret to use
   # pullSecret: my-repo-secret
 
@@ -207,25 +207,6 @@ postgresql:
 
 ## Configuration values for the mysql dependency
 ## ref: https://github.com/kubernetes/charts/blob/master/stable/mysql/README.md
-##
-mysql:
-  # Enable to deploy the mySQL chart
-  enabled: false
-  # To use an external mySQL instance, set enabled to false and uncomment
-  # the line below:
-  # mysqlServer: ""
-  # To use an external secret for the password for an external mySQL instance,
-  # set enabled to false and provide the name of the secret on the line below:
-  # mysqlPasswordSecret: ""
-  mysqlUser: "sonarUser"
-  mysqlPassword: "sonarPass"
-  mysqlDatabase: "sonarDB"
-  # mysqlParams:
-  #   useSSL: "true"
-  # Specify the TCP port that mySQL should use
-  service:
-    port: 3306
-#
 # Additional labels to add to the pods:
 # podLabels:
 #   key: value

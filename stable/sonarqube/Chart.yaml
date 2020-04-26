@@ -14,4 +14,4 @@ sources:
   - https://github.com/SonarSource/docker-sonarqube
 # This chart has been deprecated https://github.com/helm/charts/blob/master/PROCESSES.md#deprecating-a-chart
 # It is now maintained at https://github.com/oteemo/charts
-deprecated: true
+deprecated: false
